@@ -1,0 +1,31 @@
+{
+  "name": "neuquant",
+  "version": "1.0.0",
+  "description": "JavaScript port of the NeuQuant image quantization algorithm",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/devongovett/neuquant.git"
+  },
+  "keywords": [
+    "image",
+    "stream",
+    "pixel-stream",
+    "quantization"
+  ],
+  "author": "Devon Govett <devongovett@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devongovett/neuquant/issues"
+  },
+  "homepage": "https://github.com/devongovett/neuquant",
+  "dependencies": {
+    "pixel-stream": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.0.1"
+  }
+}
