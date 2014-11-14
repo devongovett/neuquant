@@ -32,6 +32,7 @@ fs.createReadStream('in.jpg')
 Returns a buffer containing a palette of 256 RGB colors for the input
 RGB image.  The quality parameter is set to `10` by default, but can 
 be changed to increase or decrease quality at the expense of performance.
+The lower the number, the higher the quality.
 
 ### `index(pixels, palette)`
 
