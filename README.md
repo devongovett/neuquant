@@ -21,7 +21,7 @@ var res = neuquant.quantize(pixels, quality);
 fs.createReadStream('in.jpg')
   .pipe(new JPEGDecoder)
   .pipe(new neuquant.Stream)
-  .pipe(new GIFDecoder)
+  .pipe(new GIFEncoder)
   .pipe(fs.createWriteStream('out.gif'));
 ```
 
