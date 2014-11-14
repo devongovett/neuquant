@@ -11,16 +11,16 @@ interface.
 ## Example
 
 ```javascript
-var nq = require('neuquant');
+var neuquant = require('neuquant');
 
 // get a palette and indexed pixel data for input RGB image
-var res = nq.quantize(pixels, quality);
+var res = neuquant.quantize(pixels, quality);
 // => { palette: <Buffer ...>, indexed: <Buffer...> }
 
 // streaming interface example
 fs.createReadStream('in.jpg')
   .pipe(new JPEGDecoder)
-  .pipe(new nq.Stream)
+  .pipe(new neuquant.Stream)
   .pipe(new GIFDecoder)
   .pipe(fs.createWriteStream('out.gif'));
 ```
