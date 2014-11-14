@@ -1,7 +1,6 @@
 var nq = require('../');
 var assert = require('assert');
 var fs = require('fs');
-var PNGDecoder = require('../../png/decoder');
 var buf = fs.readFileSync(__dirname + '/trees.pixels');
 
 describe('neuquant', function() {
