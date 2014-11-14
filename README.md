@@ -22,7 +22,7 @@ fs.createReadStream('in.jpg')
   .pipe(new JPEGDecoder)
   .pipe(new nq.Stream)
   .pipe(new GIFDecoder)
-  .pipe(fs.createWriteStream('out.png'));
+  .pipe(fs.createWriteStream('out.gif'));
 ```
 
 ## API
