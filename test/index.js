@@ -46,8 +46,8 @@ describe('neuquant', function() {
       var s = new nq.Stream(400, 533);
       
       s.on('data', function(data) {
-        assert(Buffer.isBuffer(s.palette));
-        assert.equal(s.palette.length, 256 * 3);
+        assert(Buffer.isBuffer(s.format.palette));
+        assert.equal(s.format.palette.length, 256 * 3);
         assert.equal(data.length, buf.length / 3);
         done();
       });
@@ -60,8 +60,8 @@ describe('neuquant', function() {
       var c = 0;
       
       s.on('data', function(data) {
-        assert(Buffer.isBuffer(s.palette));
-        assert.equal(s.palette.length, 256 * 3);
+        assert(Buffer.isBuffer(s.format.palette));
+        assert.equal(s.format.palette.length, 256 * 3);
         assert.equal(data.length, buf.length / 3);
         
         if (++c === 2)
