@@ -12,6 +12,8 @@ interface.
 
 ```javascript
 var neuquant = require('neuquant');
+var JPEGDecoder = require('jpg-stream/decoder');
+var GIFDecoder = require('gif-stream/decoder');
 
 // get a palette and indexed pixel data for input RGB image
 var res = neuquant.quantize(pixels, quality);
