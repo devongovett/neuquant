@@ -11,7 +11,7 @@ util.inherits(NeuQuantStream, PixelStream);
 
 NeuQuantStream.prototype._start = function(done) {
   if (this.format.colorSpace !== 'rgb')
-    throw new Error('QuantStream only accepts rgb input, got ' + this.format.colorSpace);
+    return done(new Error('QuantStream only accepts rgb input, got ' + this.format.colorSpace));
     
   this.format.colorSpace = 'indexed';
   done();
